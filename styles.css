@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav {
+    display: flex;
+
+    border: solid 3px;
+    border-color: cyan;
+    padding: 10px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease;
+}
+
+.nav_links li a:hover {
+    color: hotpink;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 0, 200);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 255, 0.8);
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-width: 100%
+}
+
+#projects {
+  flex: 4;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.projectTitle {
+    margin: auto;
+    padding: 10px;
+    
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    block-size: fit-content;
+    border-spacing: fit-content;
+}
+
+article section {
+    margin-bottom: 20px;
+    padding: 10px;
+    height: auto;
+    border: solid 3px;
+    border-color: cyan;
+    border-width: 100%;
+}
+
+article section img {
+    max-height: 300px;
+    border: solid 3px;
+    border-color: hotpink;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    
+}
+
+article section img:hover{
+   opacity: .5; 
+   cursor: pointer;
+    
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 25px;
+    float: right;
+    clear: both;
+    border: solid 3px;
+    border-color: hotpink;
+}
+
+aside section {
+    margin-bottom: 32px;
+
+}
+
+aside h2 {
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+aside img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        border-width: 100%;
+        margin: auto;
+        float: none;
+    }
+}
+
+    @media screen and (max-width: 768px) {
+
+        .logo,
+        .cta {
+            margin: auto;
+            padding-top: 30px;
+            float: none;
+            display: block;
+            align-items: center;
+        }
+    }
+            @media screen and (max-width: 768px) {
+                .container #projects {
+                    
+                    display: block;
+                    float: none;
+                    width: 100%;
+                    margin: auto;
+                    
+                    width: 100%;
+
+                }
+            }
+                article section {
+                    float: none;
+                    text-align: center;
+                    width: 100%;
+                }
+                @media screen and (max-width: 768px) {
+                    aside {
+                        float: none;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
