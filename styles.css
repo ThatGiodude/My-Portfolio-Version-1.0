@@ -9,9 +9,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-li,
-a,
-button {
+li,a,button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -38,7 +36,7 @@ nav {
     display: flex;
 
     border: solid 3px;
-    border-color: cyan;
+    border-color: rgb(64, 235, 235);
     padding: 10px;
 }
 
@@ -56,7 +54,7 @@ nav {
 }
 
 .nav_links li a:hover {
-    color: hotpink;
+    color: rgb(217, 27, 122);
 }
 
 button {
@@ -104,30 +102,25 @@ article {
     border-spacing: fit-content;
 }
 
-article section {
-    margin-bottom: 20px;
-    padding: 10px;
-    height: auto;
+article {
+    margin-bottom: 40px;
+    padding: 20px;
     border: solid 3px;
     border-color: cyan;
-    border-width: 100%;
+    float: center;
+    text-align: center;
+    width: 50%;
 }
 
-article section img {
+section img {
     max-height: 300px;
     border: solid 3px;
     border-color: hotpink;
     margin: auto;
     text-align: center;
-    width: 300px;
-    
+    width: 250px;
 }
 
-article section img:hover{
-   opacity: .5; 
-   cursor: pointer;
-    
-}
 aside {
     display: flex;
     flex-direction: column;
@@ -168,40 +161,3 @@ aside img {
         float: none;
     }
 }
-
-    @media screen and (max-width: 768px) {
-
-        .logo,
-        .cta {
-            margin: auto;
-            padding-top: 30px;
-            float: none;
-            display: block;
-            align-items: center;
-        }
-    }
-            @media screen and (max-width: 768px) {
-                .container #projects {
-                    
-                    display: block;
-                    float: none;
-                    width: 100%;
-                    margin: auto;
-                    
-                    width: 100%;
-
-                }
-            }
-                article section {
-                    float: none;
-                    text-align: center;
-                    width: 100%;
-                }
-                @media screen and (max-width: 768px) {
-                    aside {
-                        float: none;
-                        display: block;
-                        width: 100%;
-                        margin: auto;
-                    }
-                }
